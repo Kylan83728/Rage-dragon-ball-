@@ -44,12 +44,12 @@ local Toggle = farmTab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
- local args = {
+local args = {
     [1] = {
-        ["Began"] = false,
-        ["CFrame"] = CFrame.new(1155.1484375, 633.7747802734375, -3013.116943359375) * CFrame.Angles(4.170251699520122e-08, 0.09271103888750076, 9.012791934992492e-08),
-        ["Aim"] = Vector3.new(1150.51953125, 633.7747802734375, -3062.902099609375),
-        ["Camera"] = CFrame.new(1160.0576171875, 640.8237915039062, -3023.1845703125) * CFrame.Angles(-2.6378488540649414, 0.40360477566719055, 2.9284160137176514),
+        ["Began"] = true,
+        ["CFrame"] = CFrame.new(1161.0098876953125, 630.7747802734375, -2935.73681640625) * CFrame.Angles(-3.141592502593994, 0.10789448022842407, 3.1415927410125732),
+        ["Aim"] = Vector3.new(1155.6256103515625, 630.7747802734375, -2886.027587890625),
+        ["Camera"] = CFrame.new(1149.8231201171875, 637.6411743164062, -2934.21728515625) * CFrame.Angles(-1.2948626279830933, -1.1082937717437744, -1.264364242553711),
         ["Typ\208\181"] = 1,
         ["SkillId"] = "1"
     }
@@ -67,6 +67,7 @@ task.wait(0.1) -- Pause
 end
             end)
         end
+
    -- The function that takes place when the toggle is pressed
    -- The variable (Value) is a boolean on whether the toggle is true or false
    end,
